@@ -29,11 +29,7 @@
 %                                                                             %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\version "2.19.36"
-\include "oll-core.ily"
-
-% activate edition-engraver module
-#(use-modules (edition-engraver engine))
+\version "2.19.22"
 
 % Install the edition-engraver in the contexts
 % specified by the argument list

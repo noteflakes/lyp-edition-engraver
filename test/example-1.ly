@@ -1,5 +1,5 @@
 \version "2.19.37"
-\include "edition-engraver.ily"
+\require "edition-engraver"
 
 \addEdition test
 \editionMod test 1 2/4 sing.with.bach.along.Voice.A \override NoteHead.color = #green
@@ -11,9 +11,8 @@
 \editionMod test 1 2/4 sing.with.bach.along.Staff { \bar "||" \clef "alto" }
 \editionMod test 2 2/4 sing.with.bach.along.Staff \clef "G"
 
-% "Install" the edition-engraver in a number of contexts.
-% The order is not relevant,
-% Dynamics is not used in this example, Foo triggers an oll:warn
+% "Install" the edition-engraver in a number of contexts. The order is not 
+% relevant, Dynamics is not used in this example, Foo triggers an oll:warn
 \consistEE Score.Staff.Voice
 
 \layout {
